@@ -13,10 +13,12 @@ export async function middleware(req) {
         return NextResponse.next();
     }
 
+    {/*   
     // if Token exist, redirect to home screen
     if (token && pathname === '/login') {
         return NextResponse.redirect('/');
     }
+    */}
 
     // Otherwise, redirect to the sign-in page
     if (!token && pathname !== '/login') {
